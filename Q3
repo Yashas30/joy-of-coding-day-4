@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    
+    int A[6]={560,660,590,760,480,960};
+    float B[6]={97.50,66.0,79.25,76.55,98.45,96.40};
+    char C[6]={'M','T','W','T','F','S'};
+    int sum1=0,sum2=0,avg1,avg2;
+    for(int i=0;i<6;i++)
+    {
+       
+        printf("%c   %d  %f \n",C[i],A[i],B[i]);
+    }
+   printf("\n");
+   for(int i=0;i<6;i++)
+   {
+       sum1=sum1+A[i];
+       sum2=sum2+B[i];
+       
+   }
+   avg1=sum1/6;
+   avg2=sum2/6;
+printf("The weekly salary of Mr int is %d \n",sum1);
+printf("The weekly salary of Mr float is %d \n",sum2);
+printf("The average salary of Mr int is %d \n",avg1);
+printf("The average salary of Mr float is %d \n",avg2);
+}
